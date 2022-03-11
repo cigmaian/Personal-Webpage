@@ -1,0 +1,128 @@
+
+
+
+:root {
+  --font-color: black;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: #fafafa;
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  /*background-image: url();  */ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+a {
+    color : black;
+}
+
+a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+
+.titleIntro{
+    font-size: 3rem;
+}
+
+
+
+/* Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: var();
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+/* Main */
+
+.main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: larger;
+
+
+}
+
+
+/*
+ssssss
+*/
+
+.projectTitle{
+    font-size: 100px;
+}
+
+.projectText{
+    font-size: 40px;
+}
+
+img{
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-light);
+}
+
+.git {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 50%;
+}

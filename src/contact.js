@@ -16,11 +16,9 @@ function contactSection(){
 
     const contactText = document.createElement("p");
     contactText.classList.add("contactText");
-    contactText.textContent = "I'm currently looking for work as a full-stack developer. Please do not hesitate to contact me if you have any questions about additional credentials or the design of this website. Please contact me if you are a recruiter looking for a hardworking individual."
+    contactText.textContent = "I'm currently looking for work as a full-stack developer. Please do not hesitate to contact me if you have any questions about additional credentials or the design of this website."
 
     contactContent.appendChild(contactText);
-
-
 
     const contactList = document.createElement("div");
     contactList.classList.add("contactList");
@@ -45,6 +43,10 @@ function contactSection(){
     listIconsTitle.textContent = "Reach me through social media";
     listIcons.appendChild(listIconsTitle);
 
+    const imgDiv = document.createElement("div");
+    imgDiv.classList.add("imgDiv");
+    listIcons.appendChild(imgDiv);
+
     const listGitIcon = document.createElement("img");
     listGitIcon.classList.add("listGitIcon");
     listGitIcon.src = "img/stack/github.png";
@@ -53,6 +55,7 @@ function contactSection(){
 
     const gitLink = document.createElement("a");
     gitLink.href = "https://github.com/cigmaian";
+    gitLink.target = "_blank";
 
     gitLink.appendChild(listGitIcon);
     listIcons.appendChild(gitLink);
@@ -60,14 +63,18 @@ function contactSection(){
 
     const listIn = document.createElement("img");
     listIn.classList.add("listIn");
-    listIn.src = "img/stack/li.jpg";
+    listIn.src = "img/stack/li.png";
     listIn.alt = "linkedIn logo";
 
     const inLogo = document.createElement("a");
     inLogo.href = "https://ro.linkedin.com/in/andrei-cigmaian/ro";
+    inLogo.target = "_blank";
 
     inLogo.appendChild(listIn);
     listIcons.appendChild(inLogo);
+
+    imgDiv.appendChild(gitLink);
+    imgDiv.appendChild(inLogo);
 
     return contact;
 }

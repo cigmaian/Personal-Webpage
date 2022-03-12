@@ -62,24 +62,12 @@ function createMain() {
 }
 
 
-function createAboutMe(){
-
-    const aboutSection = document.createElement("section");
-    aboutSection.setAttribute("id", "about");
-
-
-
-    return aboutSection;
-}
-
-
-
 function createFooter() {
   const footer = document.createElement("footer");
   footer.classList.add("footer");
 
   const copyright = document.createElement("p");
-  copyright.textContent = `Created by cigmaian © ${new Date().getFullYear()}`;
+  copyright.textContent = `Designed & Built by Cigmaian Andrei © ${new Date().getFullYear()}`;
 
   const githubLink = document.createElement("a");
   githubLink.href = "https://github.com/cigmaian";

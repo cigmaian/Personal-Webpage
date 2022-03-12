@@ -24,17 +24,14 @@ function aboutSection(){
 
     const aboutMeDescription = document.createElement('p');
     aboutMeDescription.classList.add("aboutMeDescription");
-    aboutMeDescription.textContent = "Hi there! My name is Luis, and I enjoy creating content for the internet. My interest in web programming began when I was 10 years old and created my first website. Fast forward to the present,"
+    aboutMeDescription.textContent = "I'm a Front-end developer who carries a keen eye for design in an user-first approach. My current focus is in creating responsive layouts on the JavaScript stack of React and NodeJS which I have been exploring recently, and from my background as an physicist I'm well acquainted to bringing out solutions to complex problems.";
     right.appendChild(aboutMeDescription);
 
     const skillsDiv = document.createElement('div');
     skillsDiv.classList.add("skills");
     createAboutMe.appendChild(skillsDiv);
 
-    const skillsTitle = document.createElement('h2');
-    skillsTitle.classList.add("skillsTitle");
-    skillsTitle.textContent = "Tools and Skills";
-    skillsDiv.appendChild(skillsTitle);
+    
 
     const skillContainer = document.createElement("div"); // pricing
     skillContainer.classList.add("skillContainer"); 
@@ -70,11 +67,17 @@ function aboutSection(){
     techLogo.classList.add("frontLogo");
     techLogo.appendChild(createStackItem("Git"));
     techLogo.appendChild(createStackItem("WebPack"));
+    techLogo.appendChild(createStackItem("npm"));
     techLogo.appendChild(createStackItem("Linux"));
     techLogo.appendChild(createStackItem("GitHub"));
-    techLogo.appendChild(createStackItem("npm"));
+   
 
     stackFront.appendChild(techLogo);
+
+    const skillsTitle = document.createElement('h2');
+    skillsTitle.classList.add("skillsTitle");
+    skillsTitle.textContent = "Tools and Skills";
+    skillsDiv.appendChild(skillsTitle);
 
     const speakDiv = document.createElement('div');
     speakDiv.classList.add("speak");
@@ -93,7 +96,7 @@ function aboutSection(){
 
     const romanianDiv = document.createElement('div');
     romanianDiv.classList.add("country");
-    romanianDiv.textContent = "Eu vorbesc românește";
+    romanianDiv.textContent = "Vorbesc românește";
     speakDiv.appendChild(romanianDiv);
 
     const romanianImg = document.createElement('img');

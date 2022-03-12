@@ -6,25 +6,26 @@ function createIntro(){
 
     const titleIntro = document.createElement('h1');
     titleIntro.classList.add('titleIntro');
-    titleIntro.textContent = "Hi I am Andrei";
+    titleIntro.textContent = "Hello,";
     introContent.appendChild(titleIntro);
 
 
     const nameIntro = document.createElement('p');
     nameIntro.classList.add('nameIntro');
-    nameIntro.textContent = "Cigmaian Andrei.";
+    nameIntro.textContent = "I'm Cigmaian Andrei.";
     introContent.appendChild(nameIntro);
 
     const text1 = document.createElement('p');
     text1.classList.add('text1');
-    text1.textContent = " I build digital experiences.";
+    text1.textContent = "I build digital experiences.";
     introContent.appendChild(text1);
 
+    /*
     const text2 = document.createElement('p');
     text2.classList.add('text2');
-    text2.textContent = "I'm a software developer located in Orlando who focuses in creating (and occasionally designing) amazing applications for the web. Currently, I'm searching for exciting work opportunities with a forward-thinking organization. ";
+    text2.textContent = "I'm a Front-end developer who carries a keen eye for design in an user-first approach. My current focus is in creating responsive layouts on the JavaScript stack of React and NodeJS which I have been exploring recently, and from my background as an physicist I'm well acquainted to bringing out solutions to complex problems.";
     introContent.appendChild(text2);
-
+    */
     return introContent;
 }
 

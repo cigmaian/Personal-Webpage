@@ -90,7 +90,7 @@ function aboutSection(){
 
     const englishImg = document.createElement('img');
     englishImg.classList.add('language');
-    englishImg.src = `/img/language/uk.svg`;
+    englishImg.src = "./img/language/uk.svg";
     englishImg.alt = "english";
     englishDiv.appendChild(englishImg);
 
@@ -101,7 +101,7 @@ function aboutSection(){
 
     const romanianImg = document.createElement('img');
     romanianImg.classList.add('language');
-    romanianImg.src =   `/img/language/ro.png`;
+    romanianImg.src = "./img/language/ro.png";
     romanianImg.alt = "ro";
     romanianDiv.appendChild(romanianImg);
 
@@ -113,7 +113,7 @@ function aboutSection(){
 
     const deImg = document.createElement('img');
     deImg.classList.add('language');
-    deImg.src = `/img/language/de.png`;
+    deImg.src = "./img/language/de.png";
     deImg.alt = "de";
     deDiv.appendChild(deImg);
 
@@ -128,7 +128,7 @@ function createStackItem(name){
     stackName.textContent = name;
 
     const stackImage = document.createElement("img");
-    stackImage.src = `/img/stack/${name.toLowerCase()}.png`;
+    stackImage.src = `./img/stack/${name.toLowerCase()}.png`;
     stackImage.alt = `${name}`;
     stackImage.classList.add("stack");
 

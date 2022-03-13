@@ -34,6 +34,7 @@
   "dependencies": {
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
+    "gh-pages": "^3.2.3",
     "path-browserify": "^1.0.1",
     "querystring-es3": "^0.2.1"
   }

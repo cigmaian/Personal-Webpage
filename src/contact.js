@@ -16,7 +16,7 @@ function contactSection(){
 
     const contactText = document.createElement("p");
     contactText.classList.add("contactText");
-    contactText.textContent = "I'm currently looking for work as a full-stack developer. Please do not hesitate to contact me if you have any questions about additional credentials or the design of this website."
+    contactText.textContent = "I'm currently interested in a Front-end developer. Please do not hesitate to contact me if you have any questions about additional credentials or the design of this website."
 
     contactContent.appendChild(contactText);
 
@@ -59,7 +59,6 @@ function contactSection(){
 
     gitLink.appendChild(listGitIcon);
     listIcons.appendChild(gitLink);
-
 
     const listIn = document.createElement("img");
     listIn.classList.add("listIn");

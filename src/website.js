@@ -1,6 +1,5 @@
 
 import style from './main.css';
-
 import aboutSection from "./about.js";
 import createIntro from "./main.js";
 import workSection from "./work.js";
@@ -61,37 +60,42 @@ function createMain() {
   return main;
 }
 
+/*
 
 function createFooter() {
   const footer = document.createElement("footer");
   footer.classList.add("footer");
-
+  
   const copyright = document.createElement("p");
   copyright.textContent = `Designed & Built by Cigmaian Andrei © ${new Date().getFullYear()}`;
 
+  
   const githubLink = document.createElement("a");
   githubLink.href = "https://github.com/cigmaian";
 
   const githubIcon = document.createElement("img");
   githubIcon.src= `img/stack/github.png`;
   githubIcon.alt = "git-img";
-  githubIcon.classList.add('git');
+  githubIcon.classList.add('git');    
 
   githubLink.appendChild(githubIcon);
-  footer.appendChild(copyright);
   footer.appendChild(githubLink);
+  
+  
+  footer.appendChild(copyright);
 
   return footer;
 }
+*/
 
 function initializeWebsite() {
   const content = document.getElementById("content");
 
   content.appendChild(createHeader());
   content.appendChild(createMain());
+  /*
   content.appendChild(createFooter());
-
-  
+ */
 }
 
 export default initializeWebsite;

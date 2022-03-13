@@ -60,7 +60,7 @@ function aboutSection(){
 
     const stackTechnologyTitle = document.createElement("h3");
     stackTechnologyTitle.classList.add("level");
-    stackTechnologyTitle.textContent = "Technology";
+    stackTechnologyTitle.textContent = "Technologys";
     stackFront.appendChild(stackTechnologyTitle);
 
     const techLogo = document.createElement("div");
